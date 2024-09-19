@@ -40,6 +40,7 @@ import Button from '@/components/FormElements/Button';
 import UpdateIcon from '@/assets/interface-icons/widget-update.svg';
 import OpenIcon from '@/assets/interface-icons/open-new-tab.svg';
 import LoadingAnimation from '@/assets/interface-icons/loader.svg';
+import {userDefinedWidgetList} from "@/userDefined/widgetList";
 
 const COMPAT = {
   'adguard-dns-info': 'AdGuardDnsInfo',
@@ -121,6 +122,7 @@ const COMPAT = {
   weather: 'Weather',
   'weather-forecast': 'WeatherForecast',
   'xkcd-comic': 'XkcdComic',
+  ...userDefinedWidgetList,
 };
 
 export default {
